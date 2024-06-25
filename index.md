@@ -10,22 +10,22 @@ layout: home
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Dog Image</title>
+    <title>Random Deer Image</title>
 </head>
 <body>
-    <h1>Random Dog Image</h1>
-    <button id="fetchDogButton">Fetch a Dog Image</button>
+    <h1>Random Deer Image</h1>
+    <button id="fetchDeerButton">Fetch a Deer Image</button>
     <br><br>
-    <img id="dogImage" src="" alt="Random Dog" width="300">
+    <img id="deerImage" src="" alt="Random Deer" width="300">
     
     <script>
-        document.getElementById('fetchDogButton').addEventListener('click', function() {
-            fetch('https://dog.ceo/api/breeds/image/random')
+        document.getElementById('fetchDeerButton').addEventListener('click', function() {
+            fetch('https://deer.ceo/api/breeds/image/random')
                 .then(response => response.json())
                 .then(data => {
-                    document.getElementById('dogImage').src = data.message;
+                    document.getElementById('deerImage').src = data.message;
                 })
-                .catch(error => console.error('Error fetching dog image:', error));
+                .catch(error => console.error('Error fetching deer image:', error));
         });
     </script>
 </body>
